@@ -12,7 +12,7 @@ export async function GET(request){
             success: true
         })
 
-        response.cookies.set("token", ","{
+        response.cookies.set("token", ",",{
             httpOnly: true,
             expires: new Date(0)
         })
