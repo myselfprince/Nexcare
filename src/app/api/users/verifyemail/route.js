@@ -11,7 +11,7 @@ export async function POST(request){
         const {token} = reqBody
         console.log(token);
 
-        const user = await User.findOne({verifyToken: token, verifyTokenExpiry: {$gt: Datenow()}})
+        const user = await User.findOne({verifyToken: token, verifyTokenExpiry: {$gt: Date.now()}})
         
         if(!user){
             return NextResponse.json({error:"Invalid token"}, {status:400})
@@ -25,7 +25,7 @@ export async function POST(request){
 
         await user.save()
         
-        return NextResponse.json({message: "Email Verified Successfully", success:true}, {status:500})
+        return NextResponse.json({message: "Email Verified Successfully", success:true})
     }
     catch(error){
         return NextResponse.json({error:error.message}, {status:500})
