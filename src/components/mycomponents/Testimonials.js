@@ -21,7 +21,7 @@ const Testimonials = () => {
             <Button className="bg-[#219571]" size={"sm"}> All Testimonials</Button>
         </div>
         <div className='flex justify-center items-center mx-auto mt-12'>
-        <IoIosArrowDropleftCircle className='text-3xl md:text-5xl mr-7'/>
+        <IoIosArrowDropleftCircle className='text-3xl md:text-5xl mr-7 cursor-pointer'/>
 
         <div className='flex flex-col text-sm mx-2 px-1 md:w-5/12 w-3/4 justify-center items-end '>
         <p className=''>“I love website-name patient-centered approach to healthcare. Their platform has made it easy for me to manage my medical history and book
@@ -34,7 +34,7 @@ appointments with specialists. Highly recommended!”</p>
                 </div>
             </div>
         </div>
-        <IoIosArrowDroprightCircle className='text-3xl ml-7 md:text-5xl'/>
+        <IoIosArrowDroprightCircle className='text-3xl ml-7 md:text-5xl cursor-pointer'/>
 
         </div>
 

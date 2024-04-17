@@ -84,8 +84,6 @@ html, body{
 }
 #vision{
   background-image: url("/homepage/bg-vision.png");
-  /* object-fit:fill;
-  background-repeat: no-repeat; */
-  /* width: 100vw; */
-  /* background-color: #cccccc; */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
