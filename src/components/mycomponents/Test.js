@@ -9,24 +9,23 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 
 
-const Login = () => {
+const Test = () => {
   const router = useRouter()
-  
-
   const [user, setUser] = useState({
     email:"",
     password:"",
+    username:"",
   })
   const [buttonDisabled, setButtonDisabled] = useState(false)
   const [loading, setLoading] = useState(false)
 
-  const onLogin = async()=>{
+  const onSignup = async()=>{
     console.log("Hello")
     try {
         setLoading(true)
-        const response = await axios.post("/api/users/login", user)
-        console.log("Login Success", response.data)
-          router.push('/profile')
+        const response = await axios.post("/api/users/signup", user)
+        console.log("Signup Success", response.data)
+          router.push('/login')
 
 
     } catch (error) {
@@ -36,7 +35,7 @@ const Login = () => {
   }
 
   useEffect(()=>{
-    if(user.email.length>0 && user.password.length>0){
+    if(user.email.length>0 && user.password.length>0 && user.username.length>0){
       setButtonDisabled(false)
     }
     else{
@@ -54,40 +53,66 @@ const Login = () => {
           <div className='w-3/4'>
 
          
-          {/* login page */}
-          <h1 className='text-center text-3xl font-mono text-wrap text-green-950'>Login</h1>
-          <p className='text-center text-green-400 font-sans'>New User? <Link href={"#"}>Signup</Link> </p>
+          {/* signup page */}
+          <h1 className='text-center text-3xl font-mono text-wrap text-green-950'>Create New <br /> Account</h1>
+          <p className='text-center text-green-400 font-sans'>Already Registered? <Link href={"#"}>Login</Link> </p>
+          <h2 className='border text-center text-3xl mt-7 font-semibold'>{loading?"Processing":"Signup"}</h2>
+          <form className="rounded px-8 pt-6 pb-8 mb-4">
+        <div className="mb-4">
 
-          <h2 className='border text-center text-3xl mt-7 font-semibold'>{loading?"Processing":"Login"}</h2>
-          <div className="rounded px-8 pt-6 pb-8 mb-4">
-       
-        <div className="mb-12">
+
+          <label className="block text-gray-500 text-[13px] mb-1" htmlFor="username">
+            Please enter your username
+          </label>
+          <Input type="text" placeholder="Username"
+            id="username"
+            name="username"
+            value={user.username}
+            onChange={(e)=>setUser({...user, username: e.target.value})}
+            />
+
+
+        </div>
+
+
+        <div className="mb-4">
           <label className="block text-gray-500 text-[13px] mb-1" htmlFor="email">
             Please enter email
           </label>
-            <Input type="email" placeholder="Email"
+          <Input type="email" placeholder="Email"
             id="email"
             name="email"
             value={user.email}
             onChange={(e)=>setUser({...user, email: e.target.value})}
             />
+ 
         </div>
+
+
         <div className="mb-6">
           <label className="block text-gray-500 text-[13px] mb-1" htmlFor="password">
             Please enter password
           </label>
-           <Input type="password" placeholder="Password"
+          <Input type="password" placeholder="Password"
               id="password"
               name="password"
               value={user.password}
               onChange={(e)=>setUser({...user, password: e.target.value})}
               />
+ 
         </div>
+
         <div className="flex items-center justify-between">
-     
-          <Button onClick={onLogin} className="w-[80%] mx-auto bg-green-900 hover:bg-green-950">Login</Button>
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+       
+            onClick={onSignup}
+          >
+            Sign Up
+          </button>
+
         </div>
-      </div>
+      </form>
         </div>
         </div>
       </div>
@@ -96,4 +121,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Test
