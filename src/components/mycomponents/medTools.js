@@ -135,7 +135,7 @@ const MedTools = () => {
                     </div>
                 </div>
                 <div className="flex justify-start items-center my-2 lg:w-[24vw] -ml-1">
-                    <LuClipboardCheck className={icon_class} />
+                    <LuClipboardCheck className="text-7xl mr-5 md:mr-3 text-[#65A30D]" />
                     <div>
                         <h3>Doctor Appointment</h3>
                         <p className="text-[13px]">Easily schedule appointments with healthcare professionals online </p>
@@ -149,28 +149,28 @@ const MedTools = () => {
                     </div>
                 </div>
                 <div className="flex justify-start items-center my-2 lg:w-[24vw]">
-                    <RiMentalHealthLine className={icon_class} />
+                    <RiMentalHealthLine className="text-6xl mr-5 md:mr-3 text-[#65A30D]" />
                     <div>
                         <h3>Mental Health Support</h3>
                         <p className="text-[13px]">Access resources for mental and emotional wellness</p>
                     </div>
                 </div>
                 <div className="flex justify-start items-center my-2 lg:w-[24vw]">
-                    <MdOutlineHealthAndSafety className={icon_class} />
+                    <MdOutlineHealthAndSafety className="text-7xl mr-5 md:mr-3 text-[#65A30D]" />
                     <div>
                         <h3>Report Generation</h3>
                         <p className="text-[13px]">Instantly create detailed medical reports for streamlined patient care</p>
                     </div>
                 </div>
                 <div className="flex justify-start items-center my-2 lg:w-[24vw]">
-                    <SiIfood className={icon_class} />
+                    <SiIfood className="text-5xl mr-5 md:mr-3 text-[#65A30D]" />
                     <div>
                         <h3>Nutrients & Exercise</h3>
                         <p className="text-[13px]">Get personalized nutrients and exercise  </p>
                     </div>
                 </div>
                 <div className="flex justify-start items-center my-2 lg:w-[24vw]">
-                    <TbTruckDelivery className={icon_class} />
+                    <TbTruckDelivery className="text-6xl mr-5 md:mr-3 text-[#65A30D]" />
                     <div>
                         <h3>Medicine Delivery</h3>
                         <p className="text-[13px]">Get your prescribed medications delivered 
@@ -178,7 +178,7 @@ right to your doorstep</p>
                     </div>
                 </div>
                 <div className="flex justify-start items-center my-2 lg:w-[24vw]">
-                    <BiAlarm className={icon_class} />
+                    <BiAlarm className="text-7xl mr-5 md:mr-3 text-[#65A30D]" />
                     <div>
                         <h3>Medication Remainder</h3>
                         <p className="text-[13px]">Never miss a dose with personalized medication reminders and alarms.</p>
