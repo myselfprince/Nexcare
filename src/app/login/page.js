@@ -48,7 +48,7 @@ const Login = () => {
     <div className='mt-7 flex justify-center items-center'>
       <div className=' mx-auto flex justify-around items-center'>
         <div className='w-[500px] hidden lg:flex justify-end'>
-          <Image height={500} width={399} className='h-[100%] w-auto' src={"/homepage/login.png"}/>
+          <Image height={500} width={399} className='h-[100%] w-auto' src={"/homepage/login.png"} alt='login image'/>
         </div>
         <div className='w-screen md:w-[500px] flex items-center justify-center'>
           <div className='w-3/4'>

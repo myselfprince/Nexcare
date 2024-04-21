@@ -27,7 +27,7 @@ const Testimonials = () => {
         <p className=''>“I love website-name patient-centered approach to healthcare. Their platform has made it easy for me to manage my medical history and book
 appointments with specialists. Highly recommended!”</p>
             <div className='flex mt-2 text-[12px]'>
-                <Image src={"/testimonials/t1.png"} height={40} width={40}/>
+                <Image src={"/testimonials/t1.png"} height={40} width={40} alt='testimonial'/>
                 <div className=''>
                 <p>Brain Davis</p>
                 <p className='-my-1'>CMO, Trendsetter Styles</p>

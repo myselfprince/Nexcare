@@ -19,7 +19,7 @@ export default function Home() {
         <p className="mt-4 w-full md:w-2/3">{process.env.NEXT_PUBLIC_WEBSITE_NAME} offers seamless medical support , empowering individuals to take control of their health. Our innovative platform combines cutting edge technology with compassionate care , providing a complete solution for all your healthcare needs.</p>
       </div>
       <div>
-        <Image src={"/homepage/home1.png"} height={800} width={800} className="my-6 md:my-0"></Image>
+        <Image src={"/homepage/home1.png"} height={800} width={800} className="my-6 md:my-0" alt="homepage"></Image>
       </div>
     </div>
 
