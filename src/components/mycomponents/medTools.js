@@ -126,7 +126,7 @@ import Tools from "./Tools";
 
 const MedTools = () => {
     const list_icons = [IoShieldCheckmarkOutline, FiUserCheck, LuClipboardCheck, MdOutlinePeopleAlt, RiMentalHealthLine, MdOutlineHealthAndSafety, SiIfood, TbTruckDelivery, BiAlarm, FaUserDoctor, GiMedicines, IoGitNetworkOutline]
-    const icon_class = "text-5xl mr-5 md:mr-3 text-[#65A30D]";
+    const icon_class = "text-5xl mr-5 md:mr-3 text-[#65A30D] ";
     return (
         <div className="text-[#D1FAE5] mt-9 md:mt-16 nex-space">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">

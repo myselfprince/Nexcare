@@ -57,7 +57,7 @@ const SignupPage = () => {
          
           {/* signup page */}
           <h1 className='text-center text-3xl font-mono text-wrap text-green-950'>Create New <br /> Account</h1>
-          <p className='text-center text-green-400 font-sans'>Already Registered? <Link href={"#"}>Login</Link> </p>
+          <p className='text-center text-green-400 font-sans'>Already Registered? <Link href={"/login"}>Login</Link> </p>
           <h2 className='border text-center text-3xl mt-7 font-semibold'>{loading?"Processing":"Signup"}</h2>
           <div className="rounded px-8 pt-6 pb-8 mb-4">
         <div className="mb-4">

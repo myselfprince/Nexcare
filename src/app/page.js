@@ -4,6 +4,7 @@ import Image from "next/image";
 import Testimonials from "@/components/mycomponents/Testimonials";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/mycomponents/Navbar";
+import About from "@/components/mycomponents/About";
 
 
 export default function Home() {
@@ -45,6 +46,9 @@ export default function Home() {
       <Button className={"bg-[#219571]"} size={"lg"}>Learn More</Button>
       </div>
     </div>
+{/***************************************************  ABOUT STARTS ********************************************* */}
+
+   <About/>    
 
    </main>
    </>
